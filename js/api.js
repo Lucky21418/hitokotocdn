@@ -10,7 +10,7 @@ jQuery(function($){
     var text = $("#jttext");
     $.ajax({
       type: 'get',
-      url: './api/',
+      url: 'https://cdn.jsdelivr.net/gh/Lucky21418/hitokotocdn@1.1/api/',
       dataType: 'json',
       jsonp: 'callback',
       success:function(res) {
