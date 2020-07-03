@@ -2,7 +2,7 @@
 //获取句子文件的绝对路径
 //如果你介意别人可能会拖走这个文本，可以把文件名（hitokoto.txt）进行自定义一下，或者通过 Nginx 禁止拉取也行。
 $path = dirname(__FILE__);
-$file = file($path."/hitokoto.txt");
+$file = file($path."https://cdn.jsdelivr.net/gh/Lucky21418/hitokotocdn@1.2/api/hitokoto.txt");
  
 //随机读取一行
 $arr  = mt_rand( 0, count( $file ) - 1 );
